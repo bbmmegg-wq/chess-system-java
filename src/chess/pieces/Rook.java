@@ -2,14 +2,17 @@ package chess.pieces;
 
 import boardgame.Board;
 import boardgame.Position;
+import chess.ChessMatch;
 import chess.ChessPiece;
 import chess.Color;
 
 public class Rook extends ChessPiece {
+	
+	private ChessMatch chessMatch;
 
 	public Rook(Board board, Color color) {
 		super(board, color);
-
+		
 	}
 
 	@Override
@@ -66,5 +69,7 @@ public class Rook extends ChessPiece {
 		return mat;
 
 	}
+	
+		
 
 }
